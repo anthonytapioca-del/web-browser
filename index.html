@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="browser-container">
+        <div class="browser-header">
+            <button id="backBtn" class="nav-btn" title="Back">&larr;</button>
+            <button id="forwardBtn" class="nav-btn" title="Forward">&rarr;</button>
+            <button id="refreshBtn" class="nav-btn" title="Refresh">↻</button>
+            <input type="text" id="addressBar" class="address-bar" placeholder="Enter URL...">
+            <button id="goBtn" class="go-btn">Go</button>
+        </div>
+        <div class="browser-content">
+            <iframe id="browserFrame" class="browser-frame" title="Browser Content"></iframe>
+        </div>
+        <div class="browser-footer">
+            <span id="statusBar" class="status-bar">Ready</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
